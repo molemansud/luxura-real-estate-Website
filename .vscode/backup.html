@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<style>
+  /* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+
+
+
+
+
+/*THE FEATURES SECTION */ 
+
+/* ===================================
+   FEATURES SECTION
+=================================== */
+
+:root{
+  --radius: 32px;
+}
+
+/* SECTION */
+.features-section{
+  width:100%;
+  padding:30px 40px;
+
+  background:#f8f8f6;
+
+  font-family:"Montserrat", sans-serif;
+}
+
+/* HEADER */
+.header2{
+  margin-bottom:10px;
+  max-width:720px;
+}
+
+.badge{
+  display:inline-flex;
+  align-items:center;
+
+  padding:8px 16px;
+
+  border:1px solid #646464;
+  border-radius:999px;
+
+  font-size:11px;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+
+  color:#666;
+
+  background:white;
+
+  margin-bottom:18px;
+}
+
+.header2 h1{
+  font-size:44px;
+  line-height:1.08;
+
+  font-weight:700;
+
+  color:#111;
+
+  letter-spacing:-1.5px;
+
+  margin-bottom:18px;
+}
+
+.header2 p{
+  font-size:15px !important;
+  line-height:1.8;
+
+  color:#666;
+
+  max-width:650px;
+}
+
+/* CONTENT WRAPPER */
+.content-wrapper{
+  display:flex;
+  gap:22px;
+  align-items:stretch;
+}
+
+/* MAIN CARD */
+.main-display{
+  flex-grow:1;
+
+  display:flex;
+  gap:18px;
+
+  background:white;
+
+  border-radius:32px;
+
+  padding:18px;
+
+  overflow:hidden;
+
+  transition:
+  opacity 0.35s ease,
+  transform 0.35s ease;
+
+  border:1px solid #ececec;
+}
+
+/* smoother animation */
+.main-display.sliding{
+  opacity:0.92;
+  transform:translateX(10px);
+}
+
+/* LEFT INFO */
+.info-side{
+  width:260px;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+
+  gap:18px;
+
+  padding:10px;
+}
+
+.icon img{
+  width:52px;
+  height:52px;
+
+  border-radius:14px;
+
+  object-fit:cover;
+}
+
+/* TITLE */
+#title{
+  font-size:30px;
+  line-height:1.1;
+
+  font-weight:700;
+
+  color:#111;
+
+  letter-spacing:-1px;
+}
+
+/* DESCRIPTION */
+#description{
+  font-size:14px;
+  line-height:1.7;
+
+  color:#666;
+}
+
+/* IMAGE */
+.image-container{
+  position:relative;
+
+  flex-grow:1;
+
+  border-radius:28px;
+
+  overflow:hidden;
+}
+
+.image-container img{
+  width:100%;
+  height:420px;
+
+  object-fit:cover;
+  display:block;
+
+  transition:
+  opacity 0.4s ease;
+
+  filter:
+  brightness(0.95)
+  contrast(1.02);
+}
+
+/* CUTOUT LABEL */
+.cutout-label{
+  position:absolute;
+
+  right:0;
+  bottom:0;
+
+  background:white;
+
+  padding:18px 30px;
+
+  border-top-left-radius:28px;
+}
+
+/* cutout corners */
+.cutout-label::before,
+.cutout-label::after{
+  content:"";
+  position:absolute;
+
+  width:30px;
+  height:30px;
+
+  background:transparent;
+}
+
+.cutout-label::before{
+  top:-30px;
+  right:0;
+
+  border-bottom-right-radius:30px;
+
+  box-shadow:15px 15px 0 15px white;
+}
+
+.cutout-label::after{
+  bottom:0;
+  left:-30px;
+
+  border-bottom-right-radius:30px;
+
+  box-shadow:15px 15px 0 15px white;
+}
+
+/* CUTOUT TEXT */
+#slide-num{
+  display:block;
+
+  font-size:22px;
+  font-weight:700;
+
+  color:#111;
+
+  margin-bottom:3px;
+}
+
+#label-text{
+  font-size:11px;
+
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+
+  color:#777;
+}
+
+/* SIDEBAR */
+.sidebar{
+  display:flex;
+  gap:12px;
+
+  padding-left:10px;
+
+  border-left:1px solid #e5e5e5;
+}
+
+/* NAV ITEMS */
+.nav-item{
+  writing-mode:vertical-rl;
+  transform:rotate(180deg);
+
+  display:flex;
+  align-items:center;
+
+  gap:10px;
+
+  cursor:pointer;
+
+  color:#b7b7b7;
+
+  transition:
+  color 0.3s ease,
+  transform 0.3s ease;
+
+  font-size:11px;
+  font-weight:600;
+
+  letter-spacing:1.5px;
+
+  text-transform:uppercase;
+}
+
+.nav-item.active{
+  color:#111;
+}
+
+/* ARROW */
+.arrow{
+  font-size:14px;
+  margin-bottom:25px;
+
+  color:#999;
+}
+
+.nav-item.active .arrow{
+  color:#111;
+}
+
+/* IMAGE LOADING EFFECT */
+#main-img{
+  transition:
+  opacity 0.35s ease;
+}
+
+.img-loading{
+  opacity:0.7;
+}
+
+/* ===================================
+   TABLET
+=================================== */
+
+@media(max-width:900px){
+
+  .features-section{
+    padding:50px 20px;
+  }
+
+  .content-wrapper{
+    flex-direction:column;
+  }
+
+  /* sidebar top */
+  .sidebar{
+    order:-1;
+
+    flex-direction:row;
+
+    border-left:none;
+    border-bottom:1px solid #e5e5e5;
+
+    padding-bottom:12px;
+
+    overflow-x:auto;
+  }
+
+  /* horizontal nav */
+  .nav-item{
+    writing-mode:horizontal-tb;
+    transform:none;
+
+    white-space:nowrap;
+  }
+
+  .arrow{
+    display:none;
+  }
+
+  /* card vertical */
+  .main-display{
+    flex-direction:column;
+  }
+
+  .info-side{
+    width:100%;
+  }
+
+  .image-container img{
+    height:300px;
+  }
+}
+
+/* ===================================
+   MOBILE
+=================================== */
+
+@media(max-width:600px){
+
+  .features-section{
+    padding:40px 15px;
+  }
+
+  .header2 h1{
+    font-size:30px;
+  }
+
+  .header2 p{
+    font-size:14px !important;
+  }
+
+  .main-display{
+    padding:12px;
+    border-radius:24px;
+  }
+
+  .image-container{
+    border-radius:20px;
+  }
+
+  .image-container img{
+    height:240px;
+  }
+
+  #title{
+    font-size:24px;
+  }
+
+  .cutout-label{
+    padding:14px 22px;
+  }
+
+  #slide-num{
+    font-size:18px;
+  }
+
+  #label-text{
+    font-size:10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+   <!-- Tailwind CSS Library  -->
+ <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Aqar.Net </title>
+
+    <link rel="stylesheet" href="styles/mainpage.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+
+<!--THIRED  section-->
+<section class="features-section" style="background-color: rgb(255, 255, 255); ">
+  <div class="header2">
+    <span class="badge">What We Offer</span>
+    <h1 ><strong>REAL ESTATE SOLUTIONS</strong></h1>
+    <p style="font-size: 14px;">Providing a seamless end-to-end experience through expert investment strategy</p>
+  </div>
+
+  <div class="content-wrapper">
+    <div class="main-display" id="mainDisplay">
+      <div class="info-side">
+        <div class="icon">
+          <img src="Images/logowb.jpg" alt="Icon" width="50px" height="50px">
+        </div>
+        <h2 id="title">Luxury Residences</h2>
+        <p id="description">Experience unparalleled elegance in our luxury residences.</p>
+      </div>
+
+      <div class="image-container">
+        <img src="Images/Kitchen.jpg" id="main-img">
+        <div class="cutout-label">
+          <span id="slide-num">01</span>
+          <span id="label-text">Luxury Residences</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <div class="nav-item active" onclick="switchSlide(1)">
+        <span class="arrow" >↑</span> <span class="nav-text">01 LUXURY RESIDENCES</span>
+      </div>
+      <div class="nav-item" onclick="switchSlide(2)">
+        <span class="arrow">↑</span> <span class="nav-text">02 ECO GREEN BUILDINGS</span>
+      </div>
+      <div class="nav-item" onclick="switchSlide(3)">
+        <span class="arrow">↑</span> <span class="nav-text">03 UNIQUE VACATION HOMES</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+<script>
+
+
+
+function toggleMenu(){
+  let menu = document.getElementById("sideMenu");
+
+  if(menu.style.right === "0px"){
+    menu.style.right = "-250px"; // close
+  } else {
+    menu.style.right = "0px"; // open
+  }
+}
+
+
+
+// forse the second section 
+const data = {
+  1: { title: "Luxury Residences", img: "Images/Kitchen.jpg", num: "01", desc: "Experience unparalleled elegance in our luxury residences." },
+  2: { title: "Eco Green Buildings", img: "Images/Green.jpg", num: "02", desc: "Sustainable living with modern green technology." },
+  3: { title: "Vacation Homes", img: "Images/Vacation.jpg", num: "03", desc: "Find your perfect getaway in our unique vacation rentals." }
+};
+
+function switchSlide(id) {
+   resetAutoSlide(); 
+  const display = document.getElementById('mainDisplay');
+  const slide = data[id];
+
+  // 1. إضافة كلاس التحريك (يختفي لليمين)
+  display.classList.add('sliding');
+
+  setTimeout(() => {
+    // 2. تحديث البيانات
+    document.getElementById('title').innerText = slide.title;
+    document.getElementById('description').innerText = slide.desc;
+    document.getElementById('label-text').innerText = slide.title;
+    document.getElementById('main-img').src = slide.img;
+    document.getElementById('slide-num').innerText = slide.num;
+
+    // 3. تحديث الشريط الجانبي
+    document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
+    document.querySelector(`.nav-item:nth-child(${id})`).classList.add('active');
+
+    // 4. إزالة كلاس التحريك ليعود الكارت من اليمين بوضوح
+    display.classList.remove('sliding');
+  }, 400); // الوقت متوافق مع Transition في CSS
+}
+
+
+
+/* =========================
+   AUTO SLIDER
+========================= */
+
+let currentSlide = 1;
+const totalSlides = 3;   // number of nav items
+let autoTimer;
+
+/* go to next slide */
+function nextSlide(){
+  currentSlide++;
+  if(currentSlide > totalSlides){
+    currentSlide = 1;
+  }
+  switchSlide(currentSlide);
+}
+
+/* start auto sliding */
+function startAutoSlide(){
+  autoTimer = setInterval(nextSlide, 4500); // change every 4.5 sec
+}
+
+/* stop & restart when user clicks */
+function resetAutoSlide(){
+  clearInterval(autoTimer);
+  startAutoSlide();
+}
+
+/* start when page loads */
+window.addEventListener("load", startAutoSlide);
+</script>
+
+
+
+    </body>

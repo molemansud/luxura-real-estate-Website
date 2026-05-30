@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<style>
+  /* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+</style>
+   <!-- Tailwind CSS Library  -->
+ <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>LUXORA.Net </title>
+
+    <link rel="stylesheet" href="styles/mainpage.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+
+
+    <main>
+<!-- WHITE CARD FRAME -->
+<div class="page-frame" id="home">
+
+  <!-- HEADER -->
+  <header class="header">
+
+    <!-- LOGO -->
+    <div class="logo">
+      <div class="logo-icon">
+        <img src="Images/logowb.jpg" alt="Logo" width="40" height="40">
+      </div>
+      <span>LUXORA</span>
+    </div>
+
+    <!-- DESKTOP NAV -->
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#features">Features</a>
+      <a href="#services">Services</a>
+      <a href="#properties">Properties</a>
+    </nav>
+
+    <!-- RIGHT SIDE -->
+    <div class="header-actions">
+
+    
+
+<!-- CONTACT BUTTON (provided component) --> <!-- Tailwaind CSS version of the contact us button -->
+ <button class="contact-trigger" id="openContact">
+  <span>Contacts</span>
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- MOBILE MENU BUTTON -->
+      <button class="menu-toggle" id="menuToggle">
+        <img src="Images/hamburger-menu.png" >
+      </button>
+
+    </div>
+
+  </header>
+
+  <!-- MOBILE SIDEBAR -->
+  <div class="mobile-menu" id="mobileMenu">
+
+    <div class="mobile-menu-header">
+
+      <span>LUXORA</span>
+
+      <button id="closeMenu">✕</button>
+
+    </div>
+
+    <nav class="mobile-nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#features">Features</a>
+      <a href="#services">Services</a>
+      <a href="#properties">Properties</a>
+    </nav>
+
+  </div>
+
+  <!-- OVERLAY -->
+  <div class="menu-overlay" id="menuOverlay"></div>
+
+  <!-- HERO -->
+  <section class="hero">
+
+    <!-- BACKGROUND IMAGE -->
+    <div class="hero-img">
+      <img src="Images/pic5.png" alt="Hero Image">
+    </div>
+
+    <!-- CONTENT -->
+    <div class="hero-content">
+
+      <h1>
+        FIND YOUR <span>PERFECT</span><br>
+        HOME TODAY
+      </h1>
+
+      <p>
+        We provide tailored real estate solutions, guiding you through every
+        step with personalized experiences that meet your unique needs and aspirations.
+      </p>
+
+      <button
+  class="cursor-pointer group relative bg-white hover:bg-zinc-300 text-black font-semibold text-sm px-6 py-3 rounded-full transition-all duration-200 ease-in-out shadow hover:shadow-lg w-40 h-12"
+>
+  <div class="relative flex items-center justify-center gap-2">
+    <span class="relative inline-block overflow-hidden">
+      <span
+        class="block transition-transform duration-300 group-hover:-translate-y-full"
+      >
+        Get Started
+      </span>
+      <span
+        class="absolute inset-0 transition-transform duration-300 translate-y-full group-hover:translate-y-0"
+      >
+        Right Now
+      </span>
+    </span>
+
+    <svg
+      class="w-4 h-4 transition-transform duration-200 group-hover:rotate-45"
+      viewBox="0 0 24 24"
+    >
+      <circle fill="currentColor" r="11" cy="12" cx="12"></circle>
+      <path
+        stroke-linejoin="round"
+        stroke-linecap="round"
+        stroke-width="2"
+        stroke="white"
+        d="M7.5 16.5L16.5 7.5M16.5 7.5H10.5M16.5 7.5V13.5"
+      ></path>
+    </svg>
+  </div>
+</button>
+
+
+      <!-- STATS -->
+      <div class="stats">
+
+        <div class="state-info">
+          <strong>200+</strong>
+          <span>Projects Complete</span>
+        </div>
+
+        <div class="state-info">
+          <strong>70+</strong>
+          <span>Happy Clients</span>
+        </div>
+
+        <div class="state-info">
+          <strong>$10M+</strong>
+          <span>Project Value</span>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- AGENTS -->
+    <div class="agents-widget">
+
+      <div class="avatars">
+        <img class="expert" src="Images/a1.jpg">
+        <img class="expert" src="Images/a2.jpg">
+        <img class="expert" src="Images/a3.jpg">
+        <img class="expert" src="Images/a4.jpg">
+      </div>
+
+      <div>
+        <div class="agents-title">10+ Featured Agents</div>
+        <div class="rating">★★★★★ 5 / 5</div>
+      </div>
+
+    </div>
+
+  </section>
+
+</div>
+  
+    </section>
+  </div>
+
+
+
+  <!--VIDEO SECOND SECTION -->
+  <!-- LUXURY VIDEO SECTION -->
+<section class="dream-section" id="about">
+
+  <!-- LEFT VIDEO -->
+  <div class="video-box left-video">
+    <video autoplay muted loop playsinline>
+      <source src="Videos/v1.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <!-- CENTER CONTENT -->
+  <div class="dream-content">
+
+    <div class="star">✦</div>
+
+    <h2>
+      If you can <span>dream it</span>,<br>
+      we can <span>build it</span>.
+    </h2>
+
+    <p>
+      We adopt a uniquely personalized perspective to each project
+      to deliver seamless spaces of optimal function.
+      Renovated for our architectural understanding and masterful craftsmanship.
+    </p>
+
+    <button class="dream-btn">
+      Get in touch
+    </button>
+
+  </div>
+
+  <!-- RIGHT VIDEO -->
+  <div class="video-box right-video">
+    <video autoplay muted loop playsinline>
+      <source src="Videos/vid2.mp4" type="video/mp4" >
+    </video>
+  </div>
+
+</section>
+
+
+
+
+
+
+
+      <!--THIRED  section-->
+      <!--what we offer SECTION-->
+<section class="features-section" id="features" style="background-color: white; ">
+  <div class="header2">
+    <span class="badge">What We Offer</span>
+    <h1 ><strong>Real Estate <span>Solutions</span> </strong></h1>
+    <p style="font-size: 14px;">Providing a seamless end-to-end experience through expert investment strategy</p>
+  </div>
+
+  <div class="content-wrapper">
+    <div class="main-display" id="mainDisplay">
+      <div class="info-side">
+       
+        <h2 id="title">Luxury Residences</h2>
+        <p id="description">Experience unparalleled elegance in our luxury residences.</p>
+      </div>
+      <div class="image-container">
+        <div class="image-card"> 
+          <img src="Images/features1.png" id="main-img">
+        </div>
+       
+        <div class="cutout-label">
+          <span id="slide-num">01</span>
+          <span id="label-text">Luxury Residences</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <div class="nav-item active" onclick="switchSlide(1)">
+        <span class="arrow" >↑</span> <span class="nav-text">01 LUXURY RESIDENCES</span>
+      </div>
+      <div class="nav-item" onclick="switchSlide(2)">
+        <span class="arrow">↑</span> <span class="nav-text">02 ECO GREEN BUILDINGS</span>
+      </div>
+      <div class="nav-item" onclick="switchSlide(3)">
+        <span class="arrow">↑</span> <span class="nav-text">03 UNIQUE VACATION HOMES</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<!-- FOURTH SECTION -->
+ <!-- SERVICES WITH HOVER VIDEO BACKGROUND -->
+<section class="luxora-hover-services" id="services">
+
+  <div class="luxora-hover-video-box">
+    <video autoplay muted loop playsinline>
+      <source src="Videos/vid4.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="luxora-hover-trigger">
+    <h2 class="luxora-hover-title">Our Services</h2>
+    <p class="luxora-hover-subtitle">Premium real estate experiences tailored to your lifestyle.</p>
+  </div>
+
+  <div class="luxora-hover-container">
+    <div class="luxora-hover-content">
+      <span class="luxora-hover-tag">OUR VALUE</span>
+      <h3 class="luxora-hover-heading">Luxury Living Designed for You</h3>
+      <p class="luxora-hover-text">
+        We deliver exclusive property solutions with precision, elegance, and long-term investment value.
+      </p>
+
+      <div class="luxora-hover-accordion">
+        <div class="luxora-hover-item">
+          <div class="luxora-hover-trigger-item" onclick="luxoraHoverAccordion(this)">
+            <span>Luxury Property Consultation</span>
+            <b>↓</b>
+          </div>
+          <div class="luxora-hover-body">
+            Premium curated homes matching your lifestyle.
+          </div>
+        </div>
+
+        <div class="luxora-hover-item">
+          <div class="luxora-hover-trigger-item" onclick="luxoraHoverAccordion(this)">
+            <span>Investment Strategy</span>
+            <b>↓</b>
+          </div>
+          <div class="luxora-hover-body">
+            High-value real estate investment guidance.
+          </div>
+        </div>
+
+        <div class="luxora-hover-item">
+          <div class="luxora-hover-trigger-item" onclick="luxoraHoverAccordion(this)">
+            <span>Personalized Service</span>
+            <b>↓</b>
+          </div>
+          <div class="luxora-hover-body">
+            Tailored support for your entire journey.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+<!--Properties Showcase-->
+
+<section class="prop-showcase-section" id="properties">
+  <div class="prop-container">
+    <span class="prop-badge">Featured Properties</span>
+    <h2 class="prop-main-heading">DISCOVER HOMES TAILORED TO YOUR LIFESTYLE AND NEEDS</h2>
+    
+    <div class="prop-grid">
+      <div class="prop-card">
+        <div class="prop-media-wrapper">
+          <span class="prop-status-tag">For Investment</span>
+          <img src="Images/home 3.png" alt="The One" class="prop-img">
+          <video class="prop-video" loop muted playsinline src="Videos/v3.mp4"></video>
+        </div>
+        <div class="prop-details">
+          <p class="prop-location"><i class="location-icon"></i> Bel Air, LA</p>
+          <h3 class="prop-title">The One</h3>
+          <div class="prop-specs">
+            <span>6 Bed</span> • <span>4 Bath</span> • <span>22,700 sqft</span>
+          </div>
+          <p class="prop-price">$ 500,000</p>
+        </div>
+      </div>
+
+      <div class="prop-card">
+        <div class="prop-media-wrapper">
+          <span class="prop-status-tag">For Sale</span>
+          <img src="Images/home11.jpg" alt="Billionaire Mansion" class="prop-img">
+          <video class="prop-video" loop muted playsinline src="Videos/v11.mp4"></video>
+        </div>
+        <div class="prop-details">
+          <p class="prop-location"><i class="location-icon"></i> Bel Air, LA</p>
+          <h3 class="prop-title">Billionaire Mansion</h3>
+          <div class="prop-specs">
+            <span>5 Bed</span> • <span>3,800 sqft</span>
+          </div>
+          <p class="prop-price">$ 500,000</p>
+        </div>
+      </div>
+
+      <div class="prop-card">
+        <div class="prop-media-wrapper">
+          <span class="prop-status-tag">For Rent</span>
+          <img src="Images/home5.png" alt="The Beverly House" class="prop-img">
+          <video class="prop-video" loop muted playsinline src="Videos/v4.mp4"></video>
+        </div>
+        <div class="prop-details">
+          <p class="prop-location"><i class="location-icon"></i> Beverly Hills, CA</p>
+          <h3 class="prop-title">The Beverly House</h3>
+          <div class="prop-specs">
+            <span>3 Bed</span> • <span>2 Bath</span> • <span>1,500 sqft</span>
+          </div>
+          <p class="prop-price">$ 290,000</p>
+        </div>
+      </div>
+
+      <div class="prop-card">
+        <div class="prop-media-wrapper">
+          <span class="prop-status-tag">For Rent</span>
+          <img src="Images/home6.png" alt="Palazzo di Amore" class="prop-img">
+          <video class="prop-video" loop muted playsinline src="Videos/v6.mp4"></video>
+        </div>
+        <div class="prop-details">
+          <p class="prop-location"><i class="location-icon"></i> Beverly Hills, CA</p>
+          <h3 class="prop-title">Palazzo di Amore</h3>
+          <div class="prop-specs">
+            <span>4 Bed</span> • <span>2 Bath</span> • <span>2,100 sqft</span>
+          </div>
+          <p class="prop-price">$ 490,000</p>
+        </div>
+      </div>
+
+      <div class="prop-card">
+        <div class="prop-media-wrapper">
+          <span class="prop-status-tag">For Investment</span>
+          <img src="Images/home7.png" alt="The Manor" class="prop-img">
+          <video class="prop-video" loop muted playsinline src="Videos/vid4.mp4"></video>
+        </div>
+        <div class="prop-details">
+          <p class="prop-location"><i class="location-icon"></i> Holmby Hills, LA</p>
+          <h3 class="prop-title">The Manor</h3>
+          <div class="prop-specs">
+            <span>7 Bed</span> • <span>5 Bath</span> • <span>3,000 sqft</span>
+          </div>
+          <p class="prop-price">$ 482,000</p>
+        </div>
+      </div>
+
+      <div class="prop-card">
+        <div class="prop-media-wrapper">
+          <span class="prop-status-tag">For Sale</span>
+          <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80" alt="The Penthouse" class="prop-img">
+          <video class="prop-video" loop muted playsinline src="Videos/vid8.mp4"></video>
+        </div>
+        <div class="prop-details">
+          <p class="prop-location"><i class="location-icon"></i> Upper East Side, NY</p>
+          <h3 class="prop-title">The Penthouse at Central Park Tower</h3>
+          <div class="prop-specs">
+            <span>2 Bed</span> • <span>2,200 sqft</span>
+          </div>
+          <p class="prop-price">$ 298,000</p>
+        </div>
+      </div>
+
+      <div class="prop-card">
+        <div class="prop-media-wrapper">
+          <span class="prop-status-tag">For Sale</span>
+          <img src="Images/home10.png" alt="Modern Villa" class="prop-img">
+          <video class="prop-video" loop muted playsinline src="Videos/v10.mp4"></video>
+        </div>
+        <div class="prop-details">
+          <p class="prop-location"><i class="location-icon"></i> Miami, FL</p>
+          <h3 class="prop-title">Modern Luxury Villa</h3>
+          <div class="prop-specs">
+            <span>4 Bed</span> • <span>4 Bath</span> • <span>4,100 sqft</span>
+          </div>
+          <p class="prop-price">$ 650,000</p>
+        </div>
+      </div>
+
+      <div class="prop-card">
+        <div class="prop-media-wrapper">
+          <span class="prop-status-tag">For Rent</span>
+          <img src="Images/home1.png"alt="Sunset Malibu" class="prop-img">
+          <video class="prop-video" loop muted playsinline src="Videos/v1.mp4"></video>
+        </div>
+        <div class="prop-details">
+          <p class="prop-location"><i class="location-icon"></i> Malibu, CA</p>
+          <h3 class="prop-title">Sunset Coast Oasis</h3>
+          <div class="prop-specs">
+            <span>3 Bed</span> • <span>3 Bath</span> • <span>2,800 sqft</span>
+          </div>
+          <p class="prop-price">$ 320,000</p>
+        </div>
+      </div>
+
+      <div class="prop-card">
+        <div class="prop-media-wrapper">
+          <span class="prop-status-tag">For Investment</span>
+          <img src="Images/home 2.png" alt="Aspen Lodge" class="prop-img">
+          <video class="prop-video" loop muted playsinline src="Videos/vid3.mp4"></video>
+        </div>
+        <div class="prop-details">
+          <p class="prop-location"><i class="location-icon"></i> Aspen, CO</p>
+          <h3 class="prop-title">Alpine Timber Lodge</h3>
+          <div class="prop-specs">
+            <span>5 Bed</span> • <span>5 Bath</span> • <span>5,200 sqft</span>
+          </div>
+          <p class="prop-price">$ 890,000</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+    
+
+
+
+
+
+
+<!-- FOOTER VIDEO BACKGROUND -->
+
+<section class="luxora-prefooter-video">
+
+  <video autoplay muted loop playsinline>
+    <source src="Videos/vid4.mp4" type="video/mp4">
+  </video>
+
+  <div class="luxora-prefooter-overlay"></div>
+
+  <div class="luxora-prefooter-content">
+
+    <span>LUXURY REAL ESTATE</span>
+
+    <h2>
+      Experience Living <br>
+      Beyond Expectations
+    </h2>
+
+    <p>
+      Exclusive properties designed for timeless elegance and modern comfort.
+    </p>
+
+    <a href="#">Explore Properties</a>
+
+  </div>
+
+</section>
+
+
+ <!-- FOOTER -->
+  <footer class="luxora-footer">
+
+    <div class="luxora-footer-grid">
+
+      <!-- BRAND -->
+      <div class="luxora-footer-brand">
+        <h3 style="color: aliceblue;">LUXORA</h3>
+
+        <p>
+          Redefining premium real estate experiences with elegance, precision, and timeless value.
+        </p>
+      </div>
+
+      <!-- LINKS -->
+      <div class="luxora-footer-links">
+        <h4>Navigation</h4>
+
+        <a href="#">Home</a>
+        <a href="#">Design</a>
+        <a href="#">Services</a>
+        <a href="#">Properties</a>
+      </div>
+
+      <!-- CONTACT -->
+      <div class="luxora-footer-contact">
+        <h4>Contact</h4>
+
+        <p>hello@luxora.com</p>
+        <p>+218 91 000 0000</p>
+        <p>Tripoli, Libya</p>
+      </div>
+
+      <!-- SOCIAL -->
+      <div class="luxora-footer-social">
+        <h4>Follow Us</h4>
+
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">LinkedIn</a>
+      </div>
+
+    </div>
+
+    <!-- BOTTOM -->
+    <div class="luxora-footer-bottom">
+      <p>© 2026 Luxora. All rights reserved.</p>
+      <p>Made by Salwa AL-Mabruk</p>
+    </div>
+
+  </footer>
+
+
+
+    </main>
+
+
+
+<!-- CONTACT MODAL -->
+<div class="contact-modal" id="contactModal">
+
+  <!-- OVERLAY -->
+  <div class="contact-overlay" id="contactOverlay"></div>
+
+  <!-- MODAL BOX -->
+  <div class="contact-box">
+
+    <!-- CLOSE -->
+    <div class="contact-close" id="closeContact">
+      <!-- From Uiverse.io by ilkhoeri --> 
+<button
+  class="group flex items-center justify-center relative z-10 [transition:all_0.5s_ease] rounded-[0.375rem] p-[5px] cursor-pointer border border-[#999] outline-none focus-visible:outline-0"
+>
+  <svg
+    fill="currentColor"
+    stroke="none"
+    stroke-width="0"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+    class="w-7 h-7 overflow-visible [transition:transform_.35s_ease] group-hover:[transition-delay:.25s] [&amp;_path]:[transition:transform_.35s_ease] group-hover:rotate-45"
+  >
+    <path
+      class="group-hover:[transform:rotate(112.5deg)_translate(-27.2%,-80.2%)]"
+      d="m3.45,8.83c-.39,0-.76-.23-.92-.62-.21-.51.03-1.1.54-1.31L14.71,2.08c.51-.21,1.1.03,1.31.54.21.51-.03,1.1-.54,1.31L3.84,8.75c-.13.05-.25.08-.38.08Z"
+    ></path>
+    <path
+      class="group-hover:[transform:rotate(22.5deg)_translate(15.5%,-23%)]"
+      d="m2.02,17.13c-.39,0-.76-.23-.92-.62-.21-.51.03-1.1.54-1.31L21.6,6.94c.51-.21,1.1.03,1.31.54.21.51-.03,1.1-.54,1.31L2.4,17.06c-.13.05-.25.08-.38.08Z"
+    ></path>
+    <path
+      class="group-hover:[transform:rotate(112.5deg)_translate(-15%,-149.5%)]"
+      d="m8.91,21.99c-.39,0-.76-.23-.92-.62-.21-.51.03-1.1.54-1.31l11.64-4.82c.51-.21,1.1.03,1.31.54.21.51-.03,1.1-.54,1.31l-11.64,4.82c-.13.05-.25.08-.38.08Z"
+    ></path>
+  </svg>
+</button>
+
+    </div>
+
+    <h2>Contact Us</h2>
+
+    <p>
+      Tell us about your dream property and our team will contact you shortly.
+    </p>
+
+    <!-- FORM -->
+    <form id="luxoraForm">
+
+      <div class="form-group">
+        <input type="text" id="name" placeholder="Full Name" required>
+      </div>
+
+      <div class="form-group">
+        <input type="tel" id="phone" placeholder="Phone Number" required>
+      </div>
+
+      <div class="form-group">
+        <input type="email" id="email" placeholder="Email Address" required>
+      </div>
+
+      <div class="form-group">
+        <textarea id="message"
+                  placeholder="Your Message"
+                  rows="5"
+                  required></textarea>
+      </div>
+
+      <button type="submit" class="send-btn">
+        Send Message
+      </button>
+
+    </form>
+
+    <!-- SUCCESS -->
+    <div class="success-message" id="successMessage">
+      Message saved successfully ✓
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script1.js"></script>
+
+    
+  </body>
+</html>
