@@ -556,8 +556,13 @@ margin-left:10px;
 
 @media(max-width:480px){
 
+ .hero{
+    height:400px !important;
+    min-height:480px !important;
+  }
   .hero h1{
     font-size:34px;
+    margin-top:-60px;
   }
 
   .hero-content{
@@ -566,13 +571,20 @@ margin-left:10px;
 
   .agents-widget{
     transform:scale(0.78);
+    right:20px;
+    bottom:180px;
+    display: none;
+  
   }
   .stats{
-    margin-top:90px;
+    margin-top:20px;
   }
-
+  
+.stats span{
+    font-size:12px;
+  }
   .stats strong{
-    font-size:25px;
+    font-size:20px;
   }
 }
 
