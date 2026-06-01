@@ -1,69 +1,4 @@
-// function toggleMenu() {
-//   let menu = document.getElementById("sideMenu");
-
-//   if (menu.style.right === "0px") {
-//     menu.style.right = "-250px";
-//   } else {
-//     menu.style.right = "0px";
-//   }
-// }
-
-
-// // second section
-// const data = {
-//   1: {
-//     title: "Luxury Residences",
-//     img: "Images/Kitchen.jpg",
-//     num: "01",
-//     desc: "Experience unparalleled elegance in our luxury residences."
-//   },
-
-//   2: {
-//     title: "Eco Green Buildings",
-//     img: "Images/Green.jpg",
-//     num: "02",
-//     desc: "Sustainable living with modern green technology."
-//   },
-
-//   3: {
-//     title: "Vacation Homes",
-//     img: "Images/Vacation.jpg",
-//     num: "03",
-//     desc: "Find your perfect getaway in our unique vacation rentals."
-//   }
-// };
-
-
-// function switchSlide(id) {
-
-//   const display = document.getElementById('mainDisplay');
-//   const slide = data[id];
-
-//   // blur out
-//   display.classList.add('sliding');
-
-//   setTimeout(() => {
-
-//     // change content
-//     document.getElementById('title').innerText = slide.title;
-//     document.getElementById('description').innerText = slide.desc;
-//     document.getElementById('label-text').innerText = slide.title;
-//     document.getElementById('main-img').src = slide.img;
-//     document.getElementById('slide-num').innerText = slide.num;
-
-//     // active nav
-//     document.querySelectorAll('.nav-item')
-//       .forEach(el => el.classList.remove('active'));
-
-//     document
-//       .querySelector(`.nav-item:nth-child(${id})`)
-//       .classList.add('active');
-
-//     // bring new card
-//     display.classList.remove('sliding');
-
-//   }, 450);
-// }
+// fun
 function toggleMenu() {
   let menu = document.getElementById("sideMenu");
 
@@ -73,6 +8,9 @@ function toggleMenu() {
     menu.style.right = "0px";
   }
 }
+
+
+
 
 
 // second section
@@ -131,6 +69,12 @@ function switchSlide(id) {
   }, 650);
 }
 
+
+
+
+
+
+
 function toggleServicesAccordion(header){
 
   const currentItem =
@@ -161,6 +105,9 @@ document.querySelector('.luxora-hover-video-box').addEventListener('mouseenter',
 
 
 
+
+
+
 /* =========================================
    SIMPLE ACCORDION
 ========================================= */
@@ -178,6 +125,9 @@ function luxoraHoverAccordion(el){
 }
 
 /////////////////////////////////////////////////
+
+
+
  document.querySelectorAll('.prop-card').forEach(card => {
     const video = card.querySelector('.prop-video');
     card.addEventListener('mouseenter', () => { if(video) video.play(); });
@@ -187,6 +137,11 @@ function luxoraHoverAccordion(el){
   function run() {
     document.getElementById('properties').scrollIntoView({ behavior: 'smooth' })
   }
+
+
+
+
+
 
 
   //NAV SIDE BAR
