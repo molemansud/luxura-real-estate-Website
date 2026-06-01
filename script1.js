@@ -1,17 +1,3 @@
-// fun
-function toggleMenu() {
-  let menu = document.getElementById("sideMenu");
-
-  if (menu.style.right === "0px") {
-    menu.style.right = "-250px";
-  } else {
-    menu.style.right = "0px";
-  }
-}
-
-
-
-
 
 // second section
 const data = {
@@ -75,27 +61,10 @@ function switchSlide(id) {
 
 
 
-function toggleServicesAccordion(header){
 
-  const currentItem =
-    header.parentElement;
 
-  const accordion =
-    currentItem.parentElement;
 
-  accordion
-    .querySelectorAll('.services-modern-item')
-    .forEach(item => {
 
-      if(item !== currentItem){
-        item.classList.remove('active');
-      }
-
-    });
-
-  currentItem
-    .classList.toggle('active');
-}
 
 
 // Trigger morph class on title hover and keep it permanently active
@@ -134,16 +103,7 @@ function luxoraHoverAccordion(el){
     card.addEventListener('mouseleave', () => { if(video) { video.pause(); video.currentTime = 0; } });
   });
 
-  function run() {
-    document.getElementById('properties').scrollIntoView({ behavior: 'smooth' })
-  }
-
-
-
-
-
-
-
+  
   //NAV SIDE BAR
   // MOBILE MENU
 
